@@ -1,0 +1,11 @@
+PASS	Basic Statistics	16_3D_mbnl_S12_L008_R2_001.fastq.gz
+PASS	Per base sequence quality	16_3D_mbnl_S12_L008_R2_001.fastq.gz
+FAIL	Per tile sequence quality	16_3D_mbnl_S12_L008_R2_001.fastq.gz
+PASS	Per sequence quality scores	16_3D_mbnl_S12_L008_R2_001.fastq.gz
+WARN	Per base sequence content	16_3D_mbnl_S12_L008_R2_001.fastq.gz
+PASS	Per sequence GC content	16_3D_mbnl_S12_L008_R2_001.fastq.gz
+PASS	Per base N content	16_3D_mbnl_S12_L008_R2_001.fastq.gz
+PASS	Sequence Length Distribution	16_3D_mbnl_S12_L008_R2_001.fastq.gz
+WARN	Sequence Duplication Levels	16_3D_mbnl_S12_L008_R2_001.fastq.gz
+WARN	Overrepresented sequences	16_3D_mbnl_S12_L008_R2_001.fastq.gz
+WARN	Adapter Content	16_3D_mbnl_S12_L008_R2_001.fastq.gz
