@@ -11,7 +11,7 @@ output:
   word_document: default
 ---
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(fig.pos = '!h', echo=TRUE)
+knitr::opts_chunk$set (echo=TRUE)
 setwd("~/bioinfo/Bi623/QAA")
 ```
 
@@ -31,7 +31,6 @@ knitr::include_graphics(c("~/bioinfo/Bi623/QAA/fastqc_images/32_R1_Images/per_ba
 ```{r, echo=FALSE,out.wdith="60%",out.height="25%",fig.cap = "32.4G.both.S23 -- Read 2 Quality Score and N Content" ,fig.show='hold',fig.align='center',latex_options = c("hold_position")}
 knitr::include_graphics(c("~/bioinfo/Bi623/QAA/fastqc_images/32_R2_Images/per_base_quality.png","~/bioinfo/Bi623/QAA/fastqc_images/32_R2_Images/per_base_n_content.png"))
 ```
-
 
 
 For each of these reads, we can see the greatest drop of Quality Score at the beginning of the sequence, in the first five bases or so. When compared to the N content, while there are a minimal amount of N's, we can see the greatest number of N's show up in the first position of the reads. Overall, the quality score is consistent with the N content of each of my reads.
@@ -56,14 +55,15 @@ Overall, the quality of my libraries is great! There is an extremely low N Perce
 
 ## 2.5 
 
-From the cutadapt output for 16.3D.mbnl.S12.L008, I can see that 12.2% of Read 1 was trimmed and 13% of read 2 was trimmed. 
+From the cutadapt output for **16.3D.mbnl.S12.L008**, I can see that 12.2% of Read 1 was trimmed and 13% of read 2 was trimmed. 
 
   Read 1 with adapter:               1,002,983 (12.2%)
   
   Read 2 with adapter:               1,069,893 (13.0%)
 
 
-From the cutadapt output for 32.4G.both.S23, I can see that 5.3% of Read 1 was trimmed and 6.1% of Read 2 was trimmed. 
+
+From the cutadapt output for **32.4G.both.S23**, I can see that 5.3% of Read 1 was trimmed and 6.1% of Read 2 was trimmed. 
 
   Read 1 with adapter:                 631,720 (5.3%)
   
@@ -96,8 +96,9 @@ I would expect Read 2's to be trimmed at a higher rate than Read 1. We can expec
 
 ## 3.12 
 
-```{r, echo=FALSE,out.wdith="60%",out.height="35%",fig.cap = "Table of output from map.py: Mapped VS Unmapped reads " ,fig.show='hold',fig.align='center',latex_options = c("hold_position")}
+```{r, echo=FALSE,out.wdith="20%",out.height="10%",fig.cap = "Table of output from map.py: Mapped VS Unmapped reads " ,fig.show='hold',fig.align='center',latex_options = c("hold_position")}
 knitr::include_graphics(c("~/bioinfo/Bi623/QAA/mapped.png"))
 ```
 
 I propose that these data are both strand specific. When htseq-count was set to "reverse", over 85% of both of their reads were mapped to a feature. Setting htseq count to reverse means that the strands are considered paired end reads, where the second strand has to be the first read and the opposite strand has to be the first read. Only about 4% for both of the data were mapped to a feature when the data was treated as a single end read. 
+
